@@ -41,9 +41,20 @@ nav ul li a {
   color: #333;
 }
 
-/* CSS Document */
 
-/*ヘッダーSP版*/
+/*ヘッダー*/
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 40px;
+  }
+}
+
 
 .hamburger {
   display: none;
@@ -60,7 +71,7 @@ nav ul li a {
 }
 
 
-/*ヘッダーSP版*/
+/*ヘッダーここまで*/
 
 body {
   background-color: #EEE4E4;
@@ -72,6 +83,10 @@ body {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.sp-only {
+  display: none;
 }
 
 /*フォント系*/
@@ -383,13 +398,13 @@ body {
   .text {
     font-size: 14px;
     line-height: 1.8 ;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     padding: 0 10px;
   }
 
   .text-contact {
   font-size: 14px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   line-height: 2.0;
   margin: 0 20px;
   text-align: center;
@@ -438,6 +453,7 @@ body {
 
 
 
+
 @media (max-width: 768px) {
   .container {
     padding: 0 3% !important;
@@ -470,6 +486,41 @@ body {
   .footer {
     font-size: 12px;
     padding: 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .sp-only {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  li {
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 3px;
   }
 }
 

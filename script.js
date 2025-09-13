@@ -47,9 +47,10 @@ lightbox.addEventListener('click', () => {
 });
 
 /*ハンバーガーメニュここから*/
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('nav-menu');
+const hamburger = document.getElementById('hamburger');
+const nav = document.querySelector('nav');
 
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+
