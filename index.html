@@ -3,9 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<title>a｜あ</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/slick.min.js"></script>
+<title>a｜あ</title>　
+<link rel="icon" href="logo.ico">
 </head>
 
 <body>
@@ -38,8 +43,8 @@
     <img src="images/01.jpg" class="center-image" alt="">
   </div>
   <div class="right-column">
-    <p class="title">About me</p>
-	<p class="text">生まれも育ちも愛知県。0から1をつくりだす。<br>新卒で制作会社に入社し、3年間Webデザインやコーディングを経験。</p>
+    <p class="title-aboutme">About me</p>
+	<p class="text">愛知県出身。<br>新卒でWEB制作会社に入社し、3年間コーディングやWEBデザインの業務を経験。</p>
   </div>
 </div>
 </section>
@@ -57,14 +62,18 @@
 	<p class="title1">Design</p>
 	</div>
   <div class="container1">
-	<p class="text">想いを形に。<br>バナー制作やロゴ、店舗の看板など、目には見えない想いを形にします。<br>photoshop・illustrator・canvaなどが使えます</p><br>
+	<p class="text">想いを形に。<br>バナー制作やロゴ、店舗の看板など、目には見えない想いを形にします。</p><br>
+	<div class="features-box">
+	<p class="features-box-ttl">使用ツール</p>
+	<p class="features-box-txt">photoshop／illustrator／canva</p>
+	</div>
 </div>
 
 <div class="image-row">
   <div class="image-box">
     <img src="images/dummy_02.jpg" alt="写真1">
-    <h3 class="caption-title">タイトル1</h3>
-    <p class="caption-text">これは画像1の説明文です。</p>
+    <h3 class="caption-title">カフェの看板デザイン</h3>
+    <p class="caption-text">一宮市のニューオープンカフェの看板をデザイン。緑が多い土地に馴染みながらも目を惹くデザインに。</p>
   </div>
 
     <div class="image-box">
@@ -78,6 +87,7 @@
     <h3 class="caption-title">タイトル1</h3>
     <p class="caption-text">これは画像1の説明文です。</p>
   </div>
+
 </section>
 
 <section class="content-section" id="site">
@@ -85,7 +95,11 @@
 	<img src="images/02n.png" class="number-image" alt="">
 	<p class="title1">Site</p>
 	</div>
-	<p class="text">HTML・CSSまたはwordpressのツールでサイト制作をします。<br class="sp-only">ダンススクールやカフェ店舗など、オーナーさまの雰囲気にあわせてヒアリングしつつ、唯一無二のサイトを制作します。</p><br>
+	<p class="text">伝えたい内容をより多くの人に。過去には、ダンススクールやカフェ店舗のホームページなどを制作しています。オーナーさまの雰囲気にあわせて丁寧にヒアリングし、唯一無二のサイトを作り上げます。<br class="sp-only"></p><br>
+	
+	<div class="features-box">
+	<p class="features-box-txt">使用ツール<br>HTML／CSS／wordpress</p>
+	</div>
   </div>
 
 
@@ -94,20 +108,26 @@
 <div class="image-row">
   <div class="image-box">
     <img src="images/dummy_02.jpg" alt="写真1">
-    <h3 class="caption-title">タイトル1</h3>
-    <p class="caption-text">これは画像1の説明文です。</p>
+    <h3 class="caption-title">ポートフォリオサイト</h3>
+    <p class="caption-text">サイトのデザインから何パターンか検討し、コーディングで実装。楽しかったです＾＾</p>
   </div>
 
     <div class="image-box">
     <img src="images/dummy_02.jpg" alt="写真1">
-    <h3 class="caption-title">タイトル1</h3>
-    <p class="caption-text">これは画像1の説明文です。</p>
+    <h3 class="caption-title">羽島市のダンススクール</h3>
+    <p class="caption-text">ストリートダンススタジオのサイト制作を担当。更新しやすいサイトで、とのオーナーさまのご意向で、ワードプレスを使用してサイトを制作しました。</p>
   </div>
 
     <div class="image-box">
     <img src="images/dummy_02.jpg" alt="写真1">
-    <h3 class="caption-title">タイトル1</h3>
-    <p class="caption-text">これは画像1の説明文です。</p>
+    <h3 class="caption-title">一宮市カフェ</h3>
+    <p class="caption-text">カフェのニューオープンにあわせ、ホームページの立ち上げを担当。今後、掲載する情報が増えていくことを考慮し、まずはトップページのみのシンプルな構成に。</p>
+  </div>
+	
+	<div class="image-box">
+    <img src="images/dummy_02.jpg" alt="写真1">
+    <h3 class="caption-title">稲沢市のダンススクール</h3>
+    <p class="caption-text">中学生のころからずっとお世話になっているダンススタジオのサイトリニューアルも担当することに。完成次第載せます</p>
   </div>
 </section>
 
@@ -116,43 +136,10 @@
 	<img src="images/03n.png" class="number-image" alt="">
 	<p class="title1">Photo</p>
 	</div>
-	<p class="text">写真撮影をします。商品の画像や、一点にピントをあわせたあたたかい雰囲気の写真が得意です。一眼レフで撮影をします。</p><br>
-
-
-<div class="image-row">
-  <div class="image-box">
-    <img src="images/dummy_02.jpg" alt="写真1">
-    <h3 class="caption-title">タイトル1</h3>
-    <p class="caption-text">これは画像1の説明文です。</p>
-  </div>
-
-    <div class="image-box">
-    <img src="images/dummy_02.jpg" alt="写真1">
-    <h3 class="caption-title">タイトル1</h3>
-    <p class="caption-text">これは画像1の説明文です。</p>
-  </div>
-
-    <div class="image-box">
-    <img src="images/dummy_02.jpg" alt="写真1">
-    <h3 class="caption-title">タイトル1</h3>
-    <p class="caption-text">これは画像1の説明文です。</p>
-  </div>
-</section>
-
-<section class="content-section-white">
-  <div class="container1">
-  <p class="title-contact">CONTACT</p>
-	<p class="text-contact">お問い合わせは下記から。<br>経験を積んでいきたいので、私にできることであればどんなことでも対応したい所存です。<br>お仕事の依頼・ご相談から、「こんなこといっしょにやってみない？」というお誘いも大歓迎です！</p><br>
-</div>
-
-	<!--ぼたん-->
-<div class="button-wrapper">
-<a href="mailto:example@example.com?subject=お問い合わせ&body=こんにちは、アクアです！"  class="cute-button">お問い合わせはこちら &gt;</a>
-</div>
-<!--ぼたん-->
-
-</section>
-
+	<p class="text">何気ない日常をずっと忘れたくない。日ごろから身の回りのあらゆる思い出を写真におさめています。商品の画像や、一点にピントをあわせたあたたかい雰囲気の写真が得意です。一眼レフで撮影をします。</p><br>
+	<div class="features-box">
+	<p class="features-box-txt">撮影カメラ<br>canon／pentax</p>
+	</div>
 
 <section class="gallery-section">
   <div class="gallery-wrapper">
@@ -181,10 +168,39 @@
     <img src="" alt="拡大画像" id="lightbox-img">
   </div>
 </section>
+	
+	</section>
+
+<section class="content-section-white">
+  <div class="container1">
+  <p class="title-contact">CONTACT</p>
+	<p class="text-contact">お問い合わせは下記から。<br>経験を積んでいきたいので、私にできることであればどんなことでも対応したい所存です。<br>お仕事の依頼・ご相談から、「こんなこといっしょにやってみない？」というお誘いも大歓迎です！</p><br>
+</div>
+
+	<!--ぼたん-->
+<div class="button-wrapper">
+<a href="mailto:example@example.com?subject=お問い合わせ&body=こんにちは、アクアです！"  class="cute-button">お問い合わせはこちら &gt;</a>
+</div>
+<!--ぼたん-->
+
+</section>
 
 
 
-  <script src="script.js"></script>
+	
+<!--スライダー画像ここか
+	  <div class="slider">
+    <div><img src="images/dummy.jpg" alt="Slide 1"></div>
+    <div><img src="images/dummy.jpg" alt="Slide 2"></div>
+    <div><img src="images/dummy.jpg" alt="Slide 3"></div>
+  </div>
+スライダー画像ここまで-->
+
+
+<!--これはbodyの最後に置いておく-->
+  <script src="js/script.js"></script>
+<!--これはbodyの最後に置いておく-->
+	
 </body>
 
 <footer class="footer">
