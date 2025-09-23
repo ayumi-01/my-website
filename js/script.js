@@ -65,3 +65,20 @@ hamburger.addEventListener('click', () => {
     });
 
 /*スラーダー2個めここまで*/
+
+/*モーションここから*/
+const targets = document.querySelectorAll('.fade-up');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // 画面に入ったらアニメーション発火
+      entry.target.classList.add('show');
+    } else {
+      // 画面から出たらクラスを外す → また入ったとき再生される
+      entry.target.classList.remove('show');
+    }
+  });
+}, { threshold: 0.1 });
+
+targets.forEach(target => observer.observe(target));

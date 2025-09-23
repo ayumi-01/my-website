@@ -99,7 +99,8 @@ body {
 .title-aboutme {
   font-size: 24px;
   letter-spacing: 4px;
-  padding: 0 0 20px 0
+  padding: 0 0 20px 0;
+  text-align:center;
 }
 
 .text {
@@ -175,14 +176,14 @@ body {
   display: flex;
   align-items: center;
   margin: 40px 0;
-  gap: 20px; /* ← 間隔をあけたいときに！ */
+  gap: 20px;
   box-sizing: border-box;
 }
 
 .container img {
   height: auto;
   width: auto;
-  max-height: 300px; /* ← 必要なら制限をかける！ */
+  max-height: 300px;
   object-fit: contain;
 }
 
@@ -408,6 +409,14 @@ body {
 /*ギャラリーここまで*/
 
 /*モーションここから*/
+.fade-up {
+  opacity: 0;
+}
+
+.fade-up.show {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -418,7 +427,7 @@ body {
     transform: translateY(0);
   }
 }
-
+/*モーションここまで*/
 
 
 .footer {
