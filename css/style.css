@@ -385,6 +385,26 @@ body {
 
 /*スライダー２個目ここまで*/
 
+.readmore {
+  position: relative;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  padding-right: 16px; /* 矢印分の余白 */
+}
+.readmore::after {
+  content: "›"; /* シンプルな矢印 */
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  color: #666;
+  transition: transform 0.2s ease;
+}
+.readmore:hover::after {
+  transform: translateX(4px); /* ホバーで矢印が少し動く */
+}
+
 /*ギャラリーここから*/
 .gallery-grid {
   display: grid;
