@@ -246,6 +246,11 @@ body {
   color: #333;
 }
 
+.caption-title a {
+  color: #333;
+  text-decoration: none;
+}
+
 .caption-text {
   font-size: 13px;
   color: #666;
@@ -253,6 +258,17 @@ body {
   letter-spacing: 3px;
 }
 
+
+.arrow-2 {
+  margin-left: 8px;
+  color: #000; /* ピンクでかわいく！ */
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.arrow-2-heading a:hover {
+  color: #555; /* ホバー時の色もおしゃれに！ */
+}
 
 
 
